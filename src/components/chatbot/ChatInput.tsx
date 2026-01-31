@@ -1,4 +1,4 @@
-import React, { useState, useRef, KeyboardEvent, ChangeEvent } from 'react';
+import React, { useState, useRef, type KeyboardEvent, type ChangeEvent } from 'react';
 import { Send } from 'lucide-react';
 import { VoiceInputButton } from './VoiceInputButton';
 import { useChatbot } from '../../contexts/ChatbotContext';

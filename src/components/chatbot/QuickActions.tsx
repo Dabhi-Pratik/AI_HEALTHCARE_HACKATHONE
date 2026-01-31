@@ -1,5 +1,4 @@
 import React from 'react';
-import { Calendar, Stethoscope, Clock, AlertCircle } from 'lucide-react';
 import type { QuickAction } from '../../types/chatbot';
 import { useChatbot } from '../../contexts/ChatbotContext';
 

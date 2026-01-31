@@ -14,7 +14,6 @@ export const ChatWidget: React.FC = () => {
         isTyping,
         openChat,
         closeChat,
-        toggleChat,
         clearChat,
         preferences
     } = useChatbot();
@@ -36,14 +35,12 @@ export const ChatWidget: React.FC = () => {
             // Ctrl/Cmd + Plus to zoom in
             if ((e.ctrlKey || e.metaKey) && e.key === '=') {
                 e.preventDefault();
-                const newZoom = Math.min(150, zoomLevel + 10);
                 // Zoom handled by ZoomControls
             }
 
             // Ctrl/Cmd + Minus to zoom out
             if ((e.ctrlKey || e.metaKey) && e.key === '-') {
                 e.preventDefault();
-                const newZoom = Math.max(80, zoomLevel - 10);
                 // Zoom handled by ZoomControls
             }
         };

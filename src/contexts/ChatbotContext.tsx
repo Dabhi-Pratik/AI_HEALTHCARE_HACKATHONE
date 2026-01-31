@@ -3,9 +3,6 @@ import type { ChatMessage, ChatbotPreferences } from '../types/chatbot';
 import { intentMatcher } from '../chatbot/services/intentMatcher';
 import { analyzeSentiment as analyzeEnhancedSentiment, adjustResponseForSentiment } from '../chatbot/services/sentimentAnalyzer';
 
-// Legacy SentimentData type for compatibility
-type SentimentData = { score: number; label: string; emoji: string };
-
 interface ChatbotContextType {
     isOpen: boolean;
     messages: ChatMessage[];
@@ -112,16 +109,6 @@ export const ChatbotProvider: React.FC<{ children: ReactNode }> = ({ children })
             openChat();
         }
     }, [isOpen, openChat, closeChat]);
-
-    // Use enhanced sentiment analyzer
-    const analyzeSentiment = (content: string): SentimentData => {
-        const enhanced = analyzeEnhancedSentiment(content);
-        return {
-            score: enhanced.score,
-            label: enhanced.label,
-            emoji: enhanced.emoji
-        };
-    };
 
     // Use trained intent matcher and generate response
     const processUserMessage = (userMessage: string) => {
