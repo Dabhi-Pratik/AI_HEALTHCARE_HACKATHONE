@@ -1,0 +1,361 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hi",
+                "hello",
+                "hey",
+                "good morning",
+                "good afternoon",
+                "good evening",
+                "is anyone there",
+                "namaste",
+                "hi there",
+                "greetings"
+            ],
+            "responses": [
+                "Hello! I'm your AI Health Assistant. How can I help you today? You can ask me about symptoms, book appointments, or find doctors.",
+                "Hi there! Welcome to our healthcare system. I'm here to help you with appointments, symptom checking, or any questions you have.",
+                "Hello! I'm your virtual healthcare assistant. How may I assist you today?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "bye",
+                "goodbye",
+                "see you later",
+                "take care",
+                "i'm leaving",
+                "thanks bye",
+                "that's all",
+                "nothing else"
+            ],
+            "responses": [
+                "Take care! Feel free to reach out anytime you need help. Stay healthy!",
+                "Goodbye! Wishing you good health. Don't hesitate to contact us if you need anything.",
+                "Thank you for using our service. Take care and stay well!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "thank you",
+                "thanks",
+                "thanks a lot",
+                "i appreciate it",
+                "thank you so much",
+                "thanks for your help",
+                "helpful thanks"
+            ],
+            "responses": [
+                "You're very welcome! I'm glad I could help. Is there anything else I can assist you with?",
+                "Happy to help! Feel free to ask if you have more questions.",
+                "You're welcome! Your health is our priority. Let me know if you need anything else."
+            ]
+        },
+        {
+            "tag": "about_system",
+            "patterns": [
+                "what is this system",
+                "tell me about this platform",
+                "what can you do",
+                "how does this work",
+                "what services do you provide",
+                "what is this website about"
+            ],
+            "responses": [
+                "This is an AI-powered healthcare system that helps you:\n1) Check symptoms and get AI recommendations\n2) Book appointments with doctors\n3) Track your medical history\n4) Get reminders for appointments\n5) Access emergency care when needed\n\nHow can I assist you today?"
+            ]
+        },
+        {
+            "tag": "symptom_check",
+            "patterns": [
+                "i'm not feeling well",
+                "i have symptoms",
+                "i'm sick",
+                "something is wrong with me",
+                "i need to check my symptoms",
+                "can you help me with my symptoms",
+                "i don't feel good"
+            ],
+            "responses": [
+                "I'm sorry to hear you're not feeling well. Let me help you. Could you please describe your symptoms? For example: fever, headache, cough, pain, etc.",
+                "I understand you're not feeling well. Let's check your symptoms together. What are you experiencing right now?"
+            ]
+        },
+        {
+            "tag": "fever",
+            "patterns": [
+                "i have fever",
+                "i'm feeling hot",
+                "my temperature is high",
+                "i have high fever",
+                "fever and chills",
+                "running a fever"
+            ],
+            "responses": [
+                "I see you have a fever. Can you tell me:\n1) How high is your temperature?\n2) How long have you had it?\n3) Do you have any other symptoms like cough, body pain, or headache?"
+            ],
+            "severity": "moderate",
+            "recommended_departments": [
+                "General Medicine",
+                "Internal Medicine"
+            ]
+        },
+        {
+            "tag": "headache",
+            "patterns": [
+                "i have a headache",
+                "my head hurts",
+                "severe headache",
+                "head pain",
+                "migraine",
+                "head is pounding"
+            ],
+            "responses": [
+                "Headaches can have many causes. To help you better:\n1) On a scale of 1-10, how severe is the pain?\n2) Where exactly does it hurt?\n3) Do you have any other symptoms like nausea, vision problems, or fever?"
+            ],
+            "severity": "mild_to_moderate",
+            "recommended_departments": [
+                "Neurology",
+                "General Medicine"
+            ]
+        },
+        {
+            "tag": "chest_pain",
+            "patterns": [
+                "chest pain",
+                "my chest hurts",
+                "pain in chest",
+                "heart pain",
+                "chest discomfort",
+                "pressure in chest",
+                "tight chest"
+            ],
+            "responses": [
+                "⚠️ IMPORTANT: Chest pain can be serious. Is the pain:\n1) Crushing or squeezing?\n2) Radiating to arm, jaw, or back?\n3) Accompanied by shortness of breath, sweating, or nausea?\n\nIf YES to any, please click the EMERGENCY button immediately or call emergency services."
+            ],
+            "severity": "critical",
+            "recommended_departments": [
+                "Cardiology",
+                "Emergency"
+            ],
+            "emergency": true
+        },
+        {
+            "tag": "cough_cold",
+            "patterns": [
+                "i have a cough",
+                "coughing a lot",
+                "cold and cough",
+                "running nose",
+                "sore throat",
+                "throat pain",
+                "sneezing"
+            ],
+            "responses": [
+                "Cold and cough are common issues. Let me help you:\n1) How long have you had these symptoms?\n2) Is there any fever?\n3) Is the cough dry or with phlegm?"
+            ],
+            "severity": "mild",
+            "recommended_departments": [
+                "General Medicine",
+                "ENT"
+            ]
+        },
+        {
+            "tag": "stomach_pain",
+            "patterns": [
+                "stomach ache",
+                "abdominal pain",
+                "belly pain",
+                "stomach hurts",
+                "pain in stomach",
+                "digestive issues"
+            ],
+            "responses": [
+                "Stomach pain can have various causes. Please tell me:\n1) Where exactly is the pain (upper, lower, left, right)?\n2) Is it sharp or dull?\n3) Do you have nausea, vomiting, or diarrhea?"
+            ],
+            "severity": "moderate",
+            "recommended_departments": [
+                "Gastroenterology",
+                "General Medicine"
+            ]
+        },
+        {
+            "tag": "breathing_difficulty",
+            "patterns": [
+                "can't breathe",
+                "difficulty breathing",
+                "shortness of breath",
+                "breathing problem",
+                "gasping for air",
+                "wheezing"
+            ],
+            "responses": [
+                "⚠️ Breathing difficulty is serious. Is this:\n1) Sudden and severe?\n2) With chest pain?\n3) Lips/face turning blue?\n\nIf YES, use EMERGENCY button NOW or call emergency services immediately!"
+            ],
+            "severity": "critical",
+            "recommended_departments": [
+                "Pulmonology",
+                "Emergency",
+                "Cardiology"
+            ],
+            "emergency": true
+        },
+        {
+            "tag": "book_appointment",
+            "patterns": [
+                "i want to book an appointment",
+                "schedule an appointment",
+                "book a doctor",
+                "i need to see a doctor",
+                "make an appointment",
+                "can i get an appointment",
+                "schedule a visit"
+            ],
+            "responses": [
+                "I'd be happy to help you book an appointment! Do you:\n1) Know which doctor/department you need?\n2) Want me to recommend based on your symptoms?\n\nJust let me know!"
+            ]
+        },
+        {
+            "tag": "find_doctor",
+            "patterns": [
+                "find a doctor",
+                "i need a doctor",
+                "show me doctors",
+                "list of doctors",
+                "available doctors",
+                "search doctor"
+            ],
+            "responses": [
+                "I can help you find the right doctor. Are you looking for:\n1) A specific specialty?\n2) A doctor based on your symptoms?\n3) A particular doctor by name?"
+            ]
+        },
+        {
+            "tag": "emergency",
+            "patterns": [
+                "emergency",
+                "help me",
+                "i need immediate help",
+                "medical emergency",
+                "urgent help",
+                "call ambulance"
+            ],
+            "responses": [
+                "🚨 EMERGENCY DETECTED 🚨\n\nIf this is life-threatening:\n- Click the RED EMERGENCY BUTTON on your screen NOW\n- Or Call Emergency Services: 108/102\n\nI'm here to help - what's your emergency?"
+            ],
+            "priority": "critical",
+            "emergency": true
+        },
+        {
+            "tag": "appointment_status",
+            "patterns": [
+                "check my appointment",
+                "appointment status",
+                "is my appointment confirmed",
+                "when is my appointment",
+                "my upcoming appointments"
+            ],
+            "responses": [
+                "To view your appointments, please go to 'My Appointments' section in your dashboard. Would you like me to guide you there?"
+            ]
+        }
+    ],
+    "sentiment_keywords": {
+        "anxious": [
+            "worried",
+            "anxious",
+            "scared",
+            "nervous",
+            "afraid",
+            "concerned"
+        ],
+        "angry": [
+            "frustrated",
+            "angry",
+            "annoyed",
+            "terrible",
+            "useless",
+            "bad"
+        ],
+        "grateful": [
+            "thank",
+            "thanks",
+            "appreciate",
+            "grateful",
+            "helpful",
+            "great"
+        ],
+        "confused": [
+            "confused",
+            "don't understand",
+            "lost",
+            "what",
+            "how"
+        ],
+        "pain": [
+            "hurt",
+            "pain",
+            "severe",
+            "unbearable",
+            "ache",
+            "suffering"
+        ]
+    },
+    "emergency_keywords": [
+        "chest pain",
+        "can't breathe",
+        "difficulty breathing",
+        "severe bleeding",
+        "unconscious",
+        "heart attack",
+        "stroke",
+        "seizure",
+        "suicide",
+        "overdose",
+        "choking",
+        "severe allergic",
+        "not breathing"
+    ],
+    "entities": {
+        "symptoms": [
+            "fever",
+            "cough",
+            "cold",
+            "headache",
+            "stomach ache",
+            "nausea",
+            "vomiting",
+            "diarrhea",
+            "chest pain",
+            "back pain",
+            "dizziness",
+            "fatigue",
+            "weakness",
+            "rash",
+            "itching",
+            "sore throat"
+        ],
+        "departments": [
+            "Cardiology",
+            "Neurology",
+            "Pediatrics",
+            "Orthopedics",
+            "General Medicine",
+            "Emergency",
+            "ENT",
+            "Dermatology",
+            "Gastroenterology",
+            "Gynecology",
+            "Urology"
+        ],
+        "severity": [
+            "mild",
+            "moderate",
+            "severe",
+            "critical"
+        ]
+    }
+}

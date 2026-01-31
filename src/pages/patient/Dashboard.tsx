@@ -112,7 +112,7 @@ export const PatientDashboard: React.FC = () => {
                             </div>
                             <Button
                                 variant="secondary"
-                                className="bg-white text-black hover:bg-primary-600 hover:text-white hover:scale-105 transition-all duration-200 shadow-lg font-semibold"
+                                className="bg-dark text-black hover:bg-primary-600 hover:text-white hover:scale-105 transition-all duration-200 shadow-lg font-semibold"
                                 onClick={() => navigate('/patient/appointments')}
                             >
                                 View Details

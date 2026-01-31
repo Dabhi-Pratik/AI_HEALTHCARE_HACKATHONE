@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './styles/chatbot.css';
 
 :root {
   /* Color variables */

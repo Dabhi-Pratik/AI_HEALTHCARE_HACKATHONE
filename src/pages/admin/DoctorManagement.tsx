@@ -92,7 +92,7 @@ export const DoctorManagement: React.FC = () => {
                                 </div>
                                 <div className="flex justify-between items-center mt-2">
                                     <span className="text-sm font-medium text-gray-700">Fee:</span>
-                                    <span className="text-sm font-semibold text-green-600">${doctor.consultationFee}</span>
+                                    <span className="text-sm font-semibold text-green-600">₹{doctor.consultationFee}</span>
                                 </div>
                             </div>
                         </Card>

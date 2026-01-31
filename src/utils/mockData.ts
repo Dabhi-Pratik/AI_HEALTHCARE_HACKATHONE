@@ -112,7 +112,7 @@ export const mockDoctors: Doctor[] = [
         qualification: 'MD, FACC',
         experience: 15,
         rating: 4.8,
-        consultationFee: 150,
+        consultationFee: 1500,
         languages: ['English', 'Mandarin'],
         bio: 'Experienced cardiologist with expertise in interventional cardiology and heart failure management.',
         availability: [
@@ -135,7 +135,7 @@ export const mockDoctors: Doctor[] = [
         qualification: 'MD, DNB (Neurology)',
         experience: 12,
         rating: 4.6,
-        consultationFee: 140,
+        consultationFee: 1400,
         languages: ['English', 'Spanish'],
         bio: 'Neurologist specializing in stroke management and movement disorders.',
         availability: [
@@ -157,7 +157,7 @@ export const mockDoctors: Doctor[] = [
         qualification: 'MD, Pediatrics',
         experience: 10,
         rating: 4.9,
-        consultationFee: 120,
+        consultationFee: 1200,
         languages: ['English', 'Spanish', 'Portuguese'],
         bio: 'Dedicated pediatrician with a focus on preventive care and childhood development.',
         availability: [
@@ -180,7 +180,7 @@ export const mockDoctors: Doctor[] = [
         qualification: 'MS (Ortho), FICS',
         experience: 18,
         rating: 4.7,
-        consultationFee: 160,
+        consultationFee: 1600,
         languages: ['English', 'Hindi', 'Gujarati'],
         bio: 'Expert in joint replacement surgery and sports medicine.',
         availability: [
@@ -201,7 +201,7 @@ export const mockDoctors: Doctor[] = [
         qualification: 'MBBS, MD (Medicine)',
         experience: 8,
         rating: 4.5,
-        consultationFee: 100,
+        consultationFee: 1000,
         languages: ['English'],
         bio: 'General physician providing comprehensive primary care services.',
         availability: [

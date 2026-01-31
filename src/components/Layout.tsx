@@ -20,7 +20,6 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { EmergencyButton } from './EmergencyButton';
-import { ChatbotButton } from './ChatbotButton';
 
 interface LayoutProps {
     children: ReactNode;
@@ -160,9 +159,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 
             {/* Emergency Button */}
             <EmergencyButton />
-
-            {/* AI Chatbot Button */}
-            <ChatbotButton />
 
             {/* Backdrop for mobile sidebar */}
             {sidebarOpen && (

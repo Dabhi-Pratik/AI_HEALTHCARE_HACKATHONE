@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Calendar as CalendarIcon, Search, Star, Clock, DollarSign } from 'lucide-react';
+import { Calendar as CalendarIcon, Search, Star, Clock, IndianRupee } from 'lucide-react';
 import { Layout } from '../../components/Layout';
 import { Card } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
@@ -124,8 +124,8 @@ export const BookAppointment: React.FC = () => {
                                             <span>{doctor.experience} years</span>
                                         </div>
                                         <div className="flex items-center gap-1">
-                                            <DollarSign className="w-4 h-4" />
-                                            <span>${doctor.consultationFee}</span>
+                                            <IndianRupee className="w-4 h-4" />
+                                            <span>₹{doctor.consultationFee}</span>
                                         </div>
                                     </div>
                                 </div>
