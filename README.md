@@ -149,7 +149,6 @@ This project is licensed under the
 - **Utsav Kalathiya**  
 - **Dharmik Sanga**  
 
-**Institute:**  
-Government Engineering College, Bhavnagar  
+
 
 
