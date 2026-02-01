@@ -5,7 +5,7 @@
 
 An AI-powered healthcare assistant chatbot designed to provide users with basic medical guidance, symptom-related insights, and general health information through a clean and interactive interface.
 
-> ⚠️ This project is intended for educational and guidance purposes only and is not a replacement for professional medical advice.
+
 
 ---
 
